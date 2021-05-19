@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* primary colors*/
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    /* neutral colors */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    /**/
+    --font-karla: 'Karla', sans-serif;
+}
+
+body {
+    background-color: hsl(216, 33%, 85%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 0 0;
+}
+
+.row-box {
+    display: flex;
+}
+
+.white {
+    background-color: hsl(210, 12%, 97%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 250px;
+    width: 800px;
+}
+
+.white h4 {
+    color: var(--bright-yellow);
+    font-family: var(--font-karla);
+    font-weight: 400;
+    margin: 1rem 0 0 3rem;
+}
+
+.white h2 {
+    color: var(--cyan);
+    font-family: var(--font-karla);
+    font-weight: 700;
+    margin: 2rem 0 0 3rem;
+}
+
+.white p {
+    color: hsl(204, 5%, 78%);
+    font-family: var(--font-karla);
+    font-weight: 400;
+    margin: 1rem 0 0 3rem;
+}
+
+.box-subscription {
+    background: var(--cyan);
+    border-bottom-left-radius: 5px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: var(--light-gray);
+    font-size: 30px;
+    margin: 0 5rem 0 0;
+}
+
+.box-subscription h4 {
+    color: var(--light-gray);
+    font-family: var(--font-karla);
+    font-weight: 700;
+    margin: -1.5rem 7rem 0 0;
+}
+
+.box-subscription p {
+    color: hsl(206, 9%, 85%);
+    margin: 1rem 5rem 0 0;
+}
+
+.btn-sign {
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--light-gray);
+    font-family: var(--font-karla);
+    font-style: 16px;
+    font-weight: 700;
+    width: 78%;
+    padding: 15px;
+    margin: 4rem 0 0 1rem;
+}
+
+.btn-sign:hover {
+    background-color: hsl(70, 62%, 67%);
+}
+
+.box-why {
+    background: hsl(179, 54%, 61%);
+    width: 400px;
+    height: 300px;
+    border-bottom-right-radius: 5px;
+}
+
+.box-why h3 {
+    color: var(--light-gray);
+    font-family: var(--font-karla);
+    font-weight: 400;
+    margin: 1.5rem 0 0 2rem;
+}
+
+ ul {
+     color: var(--light-gray);
+     list-style: none;
+     font-family: var(--font-karla);
+     font-weight: 400;
+     margin: 2rem 0 0 2rem;
+     line-height: 1.7em;
+ }
+
+ @media(max-width: 600px) {
+
+    .white {
+        width: 400px;
+    }
+
+     .row-box {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+
+}
